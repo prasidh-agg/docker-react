@@ -5,7 +5,7 @@ FROM node:13.12.0-alpine
 WORKDIR '/app'
 
 #Copy over the package.json file
-COPY package*.json .
+COPY package*.json ./
 RUN npm install
 
 #Copy all of source code 
